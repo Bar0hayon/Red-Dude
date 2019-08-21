@@ -61,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameLogic\CharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\EnemyMoveUpDown.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\killablePlayer.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\KillPlayerByTouch.cs" />
     <Compile Include="Assets\Scripts\GameLogic\playerMovement.cs" />
     <None Include="Assets\Content\TwoD\AssetStore\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">

@@ -25,23 +25,23 @@ public class playerMovement : MonoBehaviour
     {
         HorizontalMove = Input.GetAxis("Horizontal") * 40f;
         animator.SetFloat("Speed", Mathf.Abs(HorizontalMove));
-        if( Input.GetButtonDown("Jump") && !jump)
+        if( Input.GetButtonDown("Jump"))
         {
             jump = true;
-            
         }
+        animator.SetBool("isJumping", jump);
     }
 
     private void FixedUpdate()
     {
         controller.Move(HorizontalMove * Time.fixedDeltaTime, false, jump);
-        if (jump)
-        {
-            Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            rb.AddForce(new Vector2(0f, JumpForce));
+        //if (jump)
+        //{
+        //    Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        //    rb.AddForce(new Vector2(0f, JumpForce));
             
-        }
+        //}
         jump = false;
-
     }
+
 }
