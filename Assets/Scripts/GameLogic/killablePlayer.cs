@@ -2,14 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class killablePlayer : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject Player;
-
-    [SerializeField]
-    private GameObject UIgameOver;
+    [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject m_UIgameOver;
 
     public void Kill()
     {
@@ -19,25 +17,11 @@ public class killablePlayer : MonoBehaviour
 
     private void gameOver()
     {
-        UIgameOver.active = true;
+        m_UIgameOver.SetActive(true);
     }
 
     private void killPlayer()
     {
-        //Player.active = false;
         Player.GetComponent<SpriteRenderer>().enabled = false;
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    
 }

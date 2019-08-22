@@ -14,8 +14,8 @@ TagManager:
   - 
   - 
   - BackGround
+  - Water&Spikes
   - Ground
-  - 
   - 
   - Player
   - 
@@ -40,6 +40,9 @@ TagManager:
   m_SortingLayers:
   - name: BackGround
     uniqueID: 83624053
+    locked: 0
+  - name: Water&Spikes
+    uniqueID: 350695487
     locked: 0
   - name: Default
     uniqueID: 0

@@ -61,10 +61,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameLogic\CharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\Coin.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\CoinCollector.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\EnemyMoveRightLeft.cs" />
     <Compile Include="Assets\Scripts\GameLogic\EnemyMoveUpDown.cs" />
     <Compile Include="Assets\Scripts\GameLogic\killablePlayer.cs" />
     <Compile Include="Assets\Scripts\GameLogic\KillPlayerByTouch.cs" />
     <Compile Include="Assets\Scripts\GameLogic\playerMovement.cs" />
+    <Compile Include="Assets\Scripts\UI\GameOverNotifier.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\PlayerMenus.cs" />
     <None Include="Assets\Content\TwoD\AssetStore\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/baroh/OneDrive/Desktop/Repos/Unity/Red Dude (mid project)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

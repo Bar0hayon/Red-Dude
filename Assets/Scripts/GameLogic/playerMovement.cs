@@ -4,21 +4,11 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public CharacterController2D controller;
-    public float HorizontalMove = 0f;
-    public bool jump = false;
-
-    [SerializeField]
-    private float JumpForce = 800f;
-
-    [SerializeField]
-    private Animator animator;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private CharacterController2D m_Controller;
+    [SerializeField] private float HorizontalMove = 0f;
+    [SerializeField] private bool jump = false;
+    [SerializeField] private float JumpForce = 800f;
+    [SerializeField] private Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -34,13 +24,7 @@ public class playerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        controller.Move(HorizontalMove * Time.fixedDeltaTime, false, jump);
-        //if (jump)
-        //{
-        //    Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        //    rb.AddForce(new Vector2(0f, JumpForce));
-            
-        //}
+        m_Controller.Move(HorizontalMove * Time.fixedDeltaTime, jump);
         jump = false;
     }
 
